@@ -1,0 +1,42 @@
+# Normalização de fim de linha
+* text=auto eol=lf
+
+# Arquivos de código-fonte
+*.java text diff=java
+*.py   text diff=python
+
+# Arquivos de build / dependências não são texto
+*.class binary
+*.jar   binary
+*.war   binary
+*.ear   binary
+*.pyc   binary
+*.pyo   binary
+*.pyd   binary
+
+# Scripts de configuração
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Documentação
+*.md  text diff=markdown
+*.txt text
+
+# Arquivos de configuração de IDEs
+*.iml text
+*.ipr text
+*.iws text
+
+# VSCode configs
+.vscode/* text
+*.code-workspace text
+
+# Arquivos de projeto
+*.xml text
+*.json text
+*.yml text
+*.yaml text
+
+# Logs e temporários
+*.log text
+*.tmp text
